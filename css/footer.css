@@ -166,7 +166,10 @@
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+      /* إضافة التلاشي التدريجي للأعلى */
+  mask-image: linear-gradient(to bottom, transparent 0%, black 50%, transparent 100%);
+  /* إضافة التلاشي التدريجي للأسفل */
+  mask-image: linear-gradient(to top, transparent 0%, black 50%, transparent 100%);
 }
 
 
